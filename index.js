@@ -11,12 +11,8 @@ const h1 = document.createElement('h1')
 h1.textContent = 'Users'
 root.appendChild(h1)
 
-function render(array) {
-  for ( const object of array ) {
-    const p = document.createElement('p')
-    p.textContent = object.name
-    root.appendChild(p)
-  }
+for ( const person of people ) {
+  const p = document.createElement('p')
+  p.textContent = person.name
+  root.appendChild(p)
 }
-
-render(people)
