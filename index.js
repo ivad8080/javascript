@@ -7,12 +7,6 @@ const people = [
 
 const root = document.getElementById('root')
 
-root.innerHTML = '<h1>Users</h1>'
-
-function render(array) {
-  for ( const object of array ) {
-    root.innerHTML += `<p>${object.name}</p>`
-  }
-}
-
-render(people)
+const h1 = document.createElement('h1')
+h1.textContent = 'Users'
+root.appendChild(h1)
